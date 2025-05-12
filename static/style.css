@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.famous_phrases{
+    margin: 5px;
+}
+
+.map{
+    margin: 5pt;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    width: 90%;
+}
+
+.posters{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
