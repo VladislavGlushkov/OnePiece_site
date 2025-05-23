@@ -25,3 +25,8 @@ img{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+a{
+    text-decoration: none;
+    color: black;
+}
