@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./static/quiz.css">
+    <link rel="stylesheet" href="./static/header.css">
+    <link rel="stylesheet" href="./static/style.css">
+    <link rel="stylesheet" href="./static/footer.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Peak Piece</h1>
+        <nav>
+            <a href="/index.html">Main</a>
+            <a href="./characters.html">Characters</a>
+            <a href="./quiz.html">Quiz</a>
+            <a href="./sieries.html">Seiries</a>
+        </nav>
+    </header>
+
+
+    <main class="quiz_piece">
+        <h1>One Piece Quiz</h1>
+
+        <form id="quiz-form">
+
+            <div class="question">
+                <p>What is your name?</p>
+                <input type="text" class="name_input" placeholder="enter here...">
+            </div>
+            <div class="question">
+                <p>1. Which 3 ate a devil fruit?</p>
+                <label><input type="checkbox" name="q1" value="luffy">Luffy</label>
+                <label><input type="checkbox" name="q1" value="zoro">Zoro</label>
+                <label><input type="checkbox" name="q1" value="ussop">Ussop</label>
+                <label><input type="checkbox" name="q1" value="saturn">ST.Saturn</label>
+                <label><input type="checkbox" name="q1" value="bonney">Bonney</label>
+            </div>
+            <div class="question">
+                <p>2. Which one is a capitan?</p>
+                <label><input type="radio" name="q2" value="luffy">Luffy</label>
+                <label><input type="radio" name="q2" value="zoro">Zoro</label>
+                <label><input type="radio" name="q2" value="ussop">Ussop</label>
+                <label><input type="radio" name="q2" value="saturn">ST.Saturn</label>
+            </div>
+            </div>
+            <div class="question">
+                <p>3. Which 2 are logia?</p>
+                <label><input type="checkbox" name="q3" value="ice">Ice fruit</label>
+                <label><input type="checkbox" name="q3" value="human">Human fruit</label>
+                <label><input type="checkbox" name="q3" value="gravity">Gravity fruit</label>
+                <label><input type="checkbox" name="q3" value="light">Glint fruit</label>
+                <label><input type="checkbox" name="q3" value="swim">Swim fruit</label>
+            </div>
+            </div>
+            <div class="question">
+                <p>4. Which one is CP0?</p>
+                <label><input type="radio" name="q4" value="kaku">Kaku</label>
+                <label><input type="radio" name="q4" value="crocus">Crocus</label>
+                <label><input type="radio" name="q4" value="imu">Imu</label>
+                <label><input type="radio" name="q4" value="bellemere">Bellemere</label>
+            </div>
+            </div>
+            <div class="question">
+                <p>5. Which 2 are vice admirals?</p>
+                <label><input type="checkbox" name="q5" value="garp">Garp</label>
+                <label><input type="checkbox" name="q5" value="akainu">Sakazuki</label>
+                <label><input type="checkbox" name="q5" value="kizaru">Borsalino</label>
+                <label><input type="checkbox" name="q5" value="hina">Hina</label>
+                <label><input type="checkbox" name="q5" value="berry">Berry</label>
+            </div>
+            </div>
+            <div class="question">
+                <p>6. Who was the first pirate that luffy defeated?</p>
+                <label><input type="radio" name="q6" value="arlong">Arlong</label>
+                <label><input type="radio" name="q6" value="buggy">Buggy</label>
+                <label><input type="radio" name="q6" value="alvida">Alvida</label>
+                <label><input type="radio" name="q6" value="kuro">Kuro</label>
+            </div>
+            </div>
+            <div class="question">
+                <p>7. Whats the least amount of swords Zoro ever used in a fight? </p>
+                <label><input type="radio" name="q7" value="0">0</label>
+                <label><input type="radio" name="q7" value="1">1</label>
+                <label><input type="radio" name="q7" value="2">2</label>
+                <label><input type="radio" name="q7" value="3">3</label>
+                <label><input type="radio" name="q7" value="9">9(ahura)</label>
+            </div>
+            </div>
+            <div class="question">
+                <p>8. What events happened in god valley?</p>
+                <label><input type="checkbox" name="q8" value="hunt">Celestial dragon hunt</label>
+                <label><input type="checkbox" name="q8" value="rox">Rox.D.Xebec fell</label>
+                <label><input type="checkbox" name="q8" value="fight">Garp fought roger</label>
+                <label><input type="checkbox" name="q8" value="holy_knights">the holy knights fought against
+                    pirates</label>
+            </div>
+            <div class="question">
+                <p>9. Who is the creator of One Piece?</p>
+                <input type="text" placeholder="Answer here" name="q9" />
+            </div>
+            <div class="question">
+                <p>10. How many crewmates does Luffy have?</p>
+                <input type="number" placeholder="Answer here" name="q10" min="0" max="50" />
+            </div>
+            <div class="question">
+                <p>11. What classification is Trebol's fruit?</p>
+                <select name="q11">
+                    <option value="">Pick one</option>
+                    <option value="logia">Logia</option>
+                    <option value="ainchent">Ainchent Zoan</option>
+                    <option value="parameica">Paramecia</option>
+                    <option value="mythical">Mythical Zoan</option>
+                    <option value="zoan">Zoan</option>
+                </select>
+            </div>
+            <div class="question">
+                <p>12. How much do you like Zoro?(From 1 to 10)</p>
+                <input type="range" name="q12" min="1" max="10" />
+            </div>
+            <div class="question">
+                <label for="">
+                    <input type="checkbox" name="confirm" required />
+                    I confirm that I passed the quiz without any hints
+                </label>
+            </div>
+            <button type="submit" class="my_button">Submit Quiz</button>
+        </form>
+        <div id="result" class="result"></div>
+    </main>
+
+    <footer>This site is dedicated to One Piece</footer>
+    <script>
+        document.getElementById('quiz-form').addEventListener('submit', function (e) {
+ 
+
+            e.preventDefault()
+            let score = 0;
+            const correct = {
+                q1: ["luffy", "saturn", "bonney"],
+                q2: "luffy",
+                q3: ["ice", "light"],
+                q4: "kaku",
+                q5: ["garp", "hina"],
+                q6: "alvida",
+                q7: "0",
+                q8: ["hunt", "rox"],
+                q9: ["oda", "eiichiro", "eiichiro oda"],
+                q10: "10",
+                q11: "paramecia",
+            }
+
+            const q1Checked = Array.from(document.querySelectorAll("input[name=q1]:checked")).map(e => e.value);
+            const correctQ1 = correct.q1;
+            const q1correct = q1Checked.length === correctQ1.length && correctQ1.every(value => q1Checked.includes(value));
+            if (q1correct) score++;
+
+            const q2 = document.querySelector("input[name=q2]:checked");
+            if (q2 && q2.value === correct.q2) score++; 5
+
+            const q3Checked = Array.from(document.querySelectorAll("input[name=q3]:checked")).map(e => e.value);
+            const correctQ3 = correct.q3;
+            const q3correct = q3Checked.length === correctQ3.length && correctQ3.every(value => q3Checked.includes(value));
+            if (q3correct) score++;
+
+            const q4 = document.querySelector("input[name=q4]:checked");
+            if (q4 && q4.value === correct.q4) score++;
+
+            const q5Checked = Array.from(document.querySelectorAll("input[name=q5]:checked")).map(e => e.value);
+            const correctQ5 = correct.q5;
+            const q5correct = q5Checked.length === correctQ5.length && correctQ5.every(value => q5Checked.includes(value));
+            if (q5correct) score++;
+
+            const q6 = document.querySelector("input[name=q6]:checked");
+            if (q6 && q6.value === correct.q6) score++;
+
+            const q7 = document.querySelector("input[name=q7]:checked");
+            if (q7 && q7.value === correct.q7) score++;
+
+            const q8Checked = Array.from(document.querySelectorAll("input[name=q8]:checked")).map(e => e.value);
+            const correctQ8 = correct.q8;
+            const q8correct = q8Checked.length === correctQ8.length && correctQ8.every(value => q8Checked.includes(value));
+            if (q8correct) score++;
+
+            const q9Checked = document.querySelector('input[name="q9"]').value.trim().toLowerCase();
+            if (correct.q9.includes(q9Checked)) score++;
+
+            const q10 = document.querySelector("input[name=q10]").value.trim();
+            if (q10 === correct.q10) score++;
+
+            const q11 = document.querySelector('input[name="q11"]').value;
+            if (q11 === correct.q11) score++;
+
+            const q12 = document.querySelector("input[name=q12]").value;
+
+           console.log(score)
+
+            const result = document.getElementById("result");
+            result.innerHTML = `
+                <p> Your score is ${score} </p>
+                <p> You rated Zoro ${q12} </p>
+            `;
+        });
+    </script>
+</body>
+
+</html>
