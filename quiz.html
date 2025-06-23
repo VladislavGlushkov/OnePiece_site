@@ -31,7 +31,7 @@
 
             <div class="question">
                 <p>What is your name?</p>
-                <input type="text" class="name_input" placeholder="enter here...">
+                <input type="text" name="username" class="name_input" placeholder="enter here... " required>
             </div>
             <div class="question">
                 <p>1. Which 3 ate a devil fruit?</p>
@@ -114,7 +114,7 @@
                     <option value="">Pick one</option>
                     <option value="logia">Logia</option>
                     <option value="ainchent">Ainchent Zoan</option>
-                    <option value="parameica">Paramecia</option>
+                    <option value="parameicia">Paramecia</option>
                     <option value="mythical">Mythical Zoan</option>
                     <option value="zoan">Zoan</option>
                 </select>
@@ -152,7 +152,7 @@
                 q8: ["hunt", "rox"],
                 q9: ["oda", "eiichiro", "eiichiro oda"],
                 q10: "10",
-                q11: "paramecia",
+                q11: "parameicia",
             }
 
             const q1Checked = Array.from(document.querySelectorAll('input[name="q1"]:checked')).map(e => e.value);
@@ -198,12 +198,22 @@
 
             const q12 = document.querySelector('input[name="q12"]').value;
 
-           console.log(score)
+            const username = document.querySelector('input[name="username"]').value.trim();
+
+            if (score <= 4){
+                var color = "red";
+            }else if (score <= 7 ){
+                var color = "yellow";
+            }else {
+                var color = "green";
+            }
 
             const result = document.getElementById("result");
             result.innerHTML = `
-                <p> Your score is ${score} </p>
+            <div style="color:${color}">
+                <p> ${username} your score is ${score} </p>
                 <p> You rated Zoro ${q12} </p>
+                </div>
             `;
         });
     </script>

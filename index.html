@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./static/header.css">
     <link rel="stylesheet" href="./static/style.css">
     <link rel="stylesheet" href="./static/footer.css">
- 
+
 
 </head>
 
@@ -27,16 +27,24 @@
             <h2>I'm gonna be King of the Pirates!</h2>
             <p>Monkey.D.Luffy</p>
         </div>
-        <p>In a monsterous fight, luffy goes into gear 5th and fights admiral kizaru meanwhile Zoro holds off Rob lucci
+        <p>In a monsterous fight, luffy goes into gear 5th and fights admiral kizaru meanwhile Zoro engages Rob lucci
         </p>
         <div class="map">
             <h2>Map of one piece world</h2>
 
-            <img src="/static/images/map.webp"
-                alt="Map of the one piece world">
+            <img src="/static/images/map.webp" alt="Map of the one piece world" />
+            <div class="marker" style="top: 30%; left: 47%;" data-name="Red Line" data-description="A tall mountain seperating the north and east blue">Red Line</div>
+            <div class="marker" style="top: 60%; left: 30%;" data-name="Calm Belt" data-description="Dangerous waters where sea kings lurk">Calm Belt</div>
+            <div class="marker" style="top: 60%; left: 20%;" data-name="Whole Cake island" data-description="Big Mom's territory">Whole Cake</div>
+            <div class="marker" style="top: 70%; left: 25%;" data-name="New World" data-description="A place in the sea full of dangerous islands and pirates">New World</div>
+            <div class="marker" style="top: 70%; left: 70%;" data-name="Paradise" data-description="The start of Luffy's crew adventures and real challenges">Paradise</div>
+            <div class="marker" style="top: 70%; left: 80%;" data-name="Okama island" data-description="The revolutionary's temporary hideout after having the last of destroyed">Momiro</div>
+
         </div>
+        <div id="info_box" class=" hidden"></div>
     </main>
     <footer>This site is dedicated to One Piece</footer>
+    <script src="index.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    text-align: center;
+    margin: 15px;
+}
+
+.name{
+    font-size: 30px;
+}
+
+.container{
+    margin: 15px;
+}
+
+.history{
+    font-size: 17px;
+}
