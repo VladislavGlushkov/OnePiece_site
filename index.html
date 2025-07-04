@@ -20,6 +20,7 @@
             <a href="./characters.html">Characters</a>
             <a href="./quiz.html">Quiz</a>
             <a href="./sieries.html">Seiries</a>
+            <a href="./inventory.html">Collection</a>
         </nav>
     </header>
     <main>
@@ -33,7 +34,7 @@
             <h2>Map of one piece world</h2>
 
             <img src="/static/images/map.webp" alt="Map of the one piece world" />
-            <div class="marker" style="top: 30%; left: 47%;" data-name="Red Line" data-description="A tall mountain seperating the north and east blue">Red Line</div>
+            <div class="marker" style="top: 30%; left: 47%;" data-name="Red Line" data-description="A tall mountain seperating the north and east blue" onclick="add_item('🗺️ treasure map')">Red Line</div>
             <div class="marker" style="top: 60%; left: 30%;" data-name="Calm Belt" data-description="Dangerous waters where sea kings lurk">Calm Belt</div>
             <div class="marker" style="top: 60%; left: 20%;" data-name="Whole Cake island" data-description="Big Mom's territory">Whole Cake</div>
             <div class="marker" style="top: 70%; left: 25%;" data-name="New World" data-description="A place in the sea full of dangerous islands and pirates">New World</div>
@@ -43,8 +44,10 @@
         </div>
         <div id="info_box" class=" hidden"></div>
     </main>
+    <div id="text" class="text"></div>
     <footer>This site is dedicated to One Piece</footer>
-    <script src="index.js"></script>
+    <script src="./static/index.js"></script>
+    <script src="./static/script.js"></script>
 </body>
 
 </html>
